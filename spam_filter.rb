@@ -6,9 +6,64 @@ class SpamFilter
     @training_data = trainingData
     @testing_data = testingData
     @threshold = 0.22
+    @prob_ham = 0
+    @prob_spam = 0
+
+    #Get the universe prob for P(h) and P(s)
+    calculate_probs
+
+    puts "Prob ham: #{@prob_ham}"
+    puts "Prob spam: #{@prob_spam}"
+
     @length_analyzer = LengthAnalyzer.new(9)
+    @upper_analyzer = Case_Analyzer.new
+    @number_analyzer = Number_Analyzer.new
+    @site_analyzer = Website_Analyzer.new
 
     train
+  end
+
+  def train
+    @length_analyzer.analyze(@training_data)
+    @upper_analyzer.analyze(@training_data)
+    @number_analyzer.analyze(@training_data)
+    @site_analyzer.analyze(@training_data)
+
+  end
+
+  def calculate_probs
+
+    ham = 0
+    spam = 0
+
+    #Remove first word from training data to to see if it is spam or not
+    @training_data.each do |line|
+      answer = line.split.first
+      text = line.split.drop(1).join(' ')
+
+      if answer == 'ham'
+        ham += 1
+      elsif answer == 'spam'
+        spam += 1
+      else
+        puts "Some error occurred... #{set}"
+      end
+
+    end
+
+    @prob_ham = ham.to_f / @training_data.size
+    @prob_spam  = spam.to_f / @training_data.size
+
+  end
+
+  def bayes_is_spam(line)
+    spam = @length_analyzer.prob_given_spam(line) * @upper_analyzer.prob_given_spam(line) * @number_analyzer.prob_given_spam(line) * @site_analyzer.prob_given_spam(line)
+    spam *= @prob_spam
+  end
+
+  def bayes_is_ham(line)
+    spam = @length_analyzer.prob_given_ham(line) * @upper_analyzer.prob_given_ham(line) * @number_analyzer.prob_given_ham(line) * @site_analyzer.prob_given_ham(line)
+    spam *= @prob_ham
   end
 
   def set_threshold(threshold)
@@ -33,10 +88,6 @@ class SpamFilter
 
   def is_ham(line)
     !is_spam(line)
-  end
-
-  def train
-    @length_analyzer.analyze(@training_data)
   end
 
   def print_truthtable
@@ -165,6 +216,30 @@ class Analyzer
     @storage[token(line)].prob_spam
   end
 
+  def prob_given_ham(line)
+    num_x = @storage[token(line)].get_ham
+    total = 0
+
+    @storage.each do |x|
+      total += x.get_ham
+    end
+
+    num_x.to_f / total.to_f
+
+  end
+
+  def prob_given_spam(line)
+    num_x = @storage[token(line)].get_spam
+    total = 0
+
+    @storage.each do |x|
+      total += x.get_spam
+    end
+
+    num_x.to_f / total.to_f
+
+  end
+
   def analyze(trainingData)
 
     #Remove first word from training data to to see if it is spam or not
@@ -244,7 +319,6 @@ class LengthAnalyzer < Analyzer
 
 end
 
-#Holds information about the relation between ham to spam
 class ProbSet
 
   @spam_num = 0
@@ -268,6 +342,14 @@ class ProbSet
 
   def prob_spam
     @spam_num.to_f / get_total
+  end
+
+  def get_ham
+    @ham_num
+  end
+
+  def get_spam
+    @spam_num
   end
 
   def print
@@ -534,7 +616,7 @@ puts pSentence('We have a sentence', spamDictionary)
 puts
 puts
 
-sample = 'How come u got nothing to do?'
+sample = '8007 FREE for 1st week! No1 Nokia tone 4 ur mob every week just txt NOKIA to 8007 Get txting and tell ur mates www.getzed.co.uk POBox 36504 W4 5WQ norm 150p/tone 16+'
 
 puts pSentence(sample, hamDictionary)
 puts pSentence(sample, spamDictionary)
@@ -576,3 +658,21 @@ puts puts 'Website'
 website_analyzer = Website_Analyzer.new
 website_analyzer.analyze(trainingData)
 website_analyzer.print
+
+
+puts
+puts
+puts
+puts
+puts
+
+puts 'Truth table'
+puts "Length: #{lengthToken.prob_ham(sample)}\t#{lengthToken.prob_spam(sample)}"
+puts "Upper: #{case_analyzer.prob_ham(sample)}\t#{case_analyzer.prob_spam(sample)}"
+puts "Numbers: #{number_analyzer.prob_ham(sample)}\t#{number_analyzer.prob_spam(sample)}"
+puts "Sites: #{website_analyzer.prob_ham(sample)}\t#{website_analyzer.prob_spam(sample)}"
+
+puts
+puts
+puts
+puts "Length: #{lengthToken.prob_given_ham(sample)}\t#{lengthToken.prob_given_spam(sample)}"
