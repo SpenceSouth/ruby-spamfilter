@@ -12,9 +12,6 @@ class SpamFilter
     #Get the universe prob for P(h) and P(s)
     calculate_probs
 
-    puts "Prob ham: #{@prob_ham}"
-    puts "Prob spam: #{@prob_spam}"
-
     @length_analyzer = LengthAnalyzer.new(9)
     @upper_analyzer = Case_Analyzer.new
     @number_analyzer = Number_Analyzer.new
@@ -56,14 +53,74 @@ class SpamFilter
 
   end
 
+  def bayes_prob_spam_wbw(line)
+    spam = @length_analyzer.prob_given_spam(line) * @upper_analyzer.prob_given_spam(line) * @site_analyzer.prob_given_spam(line) * (0.25 * p_sentence(line, @spam_dictionary))
+    spam *= @prob_spam
+  end
+
+  def bayes_prob_ham_wbw(line)
+    spam = @length_analyzer.prob_given_ham(line) * @upper_analyzer.prob_given_ham(line) * @site_analyzer.prob_given_ham(line) * (0.25 * p_sentence(line, @ham_dictionary))
+    spam *= @prob_ham
+
+  end
+
+  def bayes_is_ham_wbw(line)
+    bayes_prob_ham_wbw(line) > bayes_prob_spam_wbw(line)
+  end
+
+  def bayes_is_spam_wbw(line)
+    !bayes_is_ham_wbw(line)
+  end
+
+  def bayes_truth_table_wbw
+
+    spam_true = 0
+    spam_false = 0
+    ham_true = 0
+    ham_false = 0
+
+    @testing_data.each do |line|
+      answer = line.split.first
+      sample = line.split.drop(1).join(' ')
+
+      if answer == 'ham'
+        if bayes_is_ham_wbw(sample)
+          ham_true += 1
+        else
+          ham_false += 1
+        end
+      else
+        if bayes_is_spam_wbw(sample)
+          spam_true += 1
+        else
+          spam_false += 1
+        end
+      end
+
+    end
+
+    #Print the table
+    puts
+    puts 'With bag of words'
+    puts "\t\tHam\t\tSpam"
+    puts "Ham\t\t#{ham_true}\t\t#{ham_false}"
+    puts "Spam\t#{spam_false}\t\t#{spam_true}"
+
+    puts
+    puts "Correctly identifies ham #{ham_true.to_f/(ham_true + ham_false)}% of the time"
+    puts "Correctly identifies spam #{spam_true.to_f/(spam_true + spam_false)}% of the time"
+
+  end
+
   def bayes_prob_spam(line)
-    spam = @length_analyzer.prob_given_spam(line) * @upper_analyzer.prob_given_spam(line) * @site_analyzer.prob_given_spam(line)
+    spam = @length_analyzer.prob_given_spam(line) * @upper_analyzer.prob_given_spam(line) * @site_analyzer.prob_given_spam(line) * @number_analyzer.prob_given_spam(line)
     spam *= @prob_spam
   end
 
   def bayes_prob_ham(line)
-    spam = @length_analyzer.prob_given_ham(line) * @upper_analyzer.prob_given_ham(line) * @site_analyzer.prob_given_ham(line)
+    spam = @length_analyzer.prob_given_ham(line) * @upper_analyzer.prob_given_ham(line) * @site_analyzer.prob_given_ham(line) * @number_analyzer.prob_given_ham(line)
     spam *= @prob_ham
+
   end
 
   def bayes_is_ham(line)
@@ -103,6 +160,7 @@ class SpamFilter
 
     #Print the table
     puts
+    puts 'Without bag of words'
     puts "\t\tHam\t\tSpam"
     puts "Ham\t\t#{ham_true}\t\t#{ham_false}"
     puts "Spam\t#{spam_false}\t\t#{spam_true}"
@@ -111,6 +169,14 @@ class SpamFilter
     puts "Correctly identifies ham #{ham_true.to_f/(ham_true + ham_false)}% of the time"
     puts "Correctly identifies spam #{spam_true.to_f/(spam_true + spam_false)}% of the time"
 
+  end
+
+  def add_spam_dictionary(spam_dictionary)
+    @spam_dictionary = spam_dictionary
+  end
+
+  def add_ham_dictionary(ham_dictionary)
+    @ham_dictionary = ham_dictionary
   end
 
   def set_threshold(threshold)
@@ -548,6 +614,10 @@ def create_dictionary(data)
 
   #Iterate through training data
   data.each do |line|
+
+    #Removes all symbols
+    line = line.tr('^A-Za-z', ' ')
+
     split = line.split
 
     split.each do |word|
@@ -567,61 +637,63 @@ def create_dictionary(data)
 
   end
 
-  return dictionary
+  dictionary
 
 end
 
-def numberOfWordsInDictionary(table)
+def dictionary_size(dictionary)
 
   count = 0
 
-  table.each do |x,y|
+  dictionary.each do |x,y|
     count += y
   end
 
-  return count
+  count
 
 end
 
-def pWord(x, dictionary)
+def p_word_given(x, dictionary)
 
-  prob = dictionary[x].to_f / dictionary.size
+  if dictionary.nil?
+    puts 'Dictionary is nil'
+  end
+
+  dictionary[x].to_f / dictionary_size(dictionary)
 
 end
 
-def pSentence(x, dictionary)
+def p_sentence(x, dictionary)
 
+  x = x.tr('^A-Za-z', ' ')
   sentence = x.split
-  prob = 0
+  prob = -1
 
   #Calculate probability based off each word
   sentence.each do |word|
 
-    result = pWord(word, dictionary)
+    result = p_word_given(word.downcase, dictionary)
 
     if result == 0
       next
     end
 
-    if prob == 0
+    if prob == -1
       prob = result
     else
       prob *= result
     end
   end
 
-  #TODO: Calculate prob based off of sentence length
-
-
-  return prob;
+  prob
 end
 
 
 texts = Array.new
-trainingData = Array.new
-testingData = Array.new
-trainingHam = Array.new
-trainingSpam = Array.new
+training_data = Array.new
+testing_data = Array.new
+training_ham = Array.new
+training_spam = Array.new
 
 #Read in file
 file = File.new('spamcollection.txt', 'r')
@@ -634,107 +706,49 @@ file.close
 texts = texts.shuffle
 
 #Find cutoff for training data.  First 75% of our data is used for training.
-trainingIndex = texts.length/4*3
+training_index = texts.length/4*3
 
 #Sort into training data and testing data
 texts.each_index do |index|
-  if index < trainingIndex
-    trainingData.push(texts[index])
+  if index < training_index
+    training_data.push(texts[index])
   else
-    testingData.push(texts[index])
+    testing_data.push(texts[index])
   end
 end
 
 #Seperate training data into spam and ham.  Removing ham and spam from each line
-trainingData.each do |data|
+training_data.each do |data|
   if data.split.first == 'ham'
-    trainingHam.push(data.split.drop(1).join(' '))
+    training_ham.push(data.split.drop(1).join(' '))
   else
-    trainingSpam.push(data.split.drop(1).join(' '))
+    training_spam.push(data.split.drop(1).join(' '))
   end
 end
 
-puts "Training data size: #{trainingData.size}"
-puts "Training ham size: #{trainingHam.size}"
-puts "Training spam size: #{trainingSpam.size}"
+puts "Training data size: #{training_data.size}"
+puts "Training ham size: #{training_ham.size}"
+puts "Training spam size: #{training_spam.size}"
+puts "Testing data size: #{testing_data.size}"
 
-hamDictionary = create_dictionary(trainingHam)
-spamDictionary = create_dictionary(trainingSpam)
+ham_dictionary = create_dictionary(training_ham)
+spam_dictionary = create_dictionary(training_spam)
 
-probHam = trainingHam.size.to_f / trainingData.size.to_f
-probSpam = 1 - probHam
+prob_word_given_ham = ham_dictionary.size.to_f/dictionary_size(ham_dictionary)
+prob_word_given_spam = spam_dictionary.size.to_f/dictionary_size(spam_dictionary)
 
-puts
-puts "ProbHam: #{probHam}"
-puts "ProbSpam: #{probSpam}"
-
-probWordGivenHam = hamDictionary.size.to_f/numberOfWordsInDictionary(hamDictionary)
-probWordGivenSpam = spamDictionary.size.to_f/numberOfWordsInDictionary(spamDictionary)
-
-puts
-puts pSentence('We have a sentence', hamDictionary)
-puts pSentence('We have a sentence', spamDictionary)
-
-puts
-puts
-
-sample = 'Travis is not sleeping'
-puts pSentence(sample, hamDictionary)
-puts pSentence(sample, spamDictionary)
+sample = 'Hey so I got some tickets to go to the movie this friday?  Want to come?'
 
 #Test data
 
-spam_filter = SpamFilter.new(trainingData, testingData)
+spam_filter = SpamFilter.new(training_data, testing_data)
+spam_filter.add_spam_dictionary(spam_dictionary)
+spam_filter.add_ham_dictionary(ham_dictionary)
 
-lengthToken = LengthAnalyzer.new(9)
-lengthToken.analyze(trainingData)
-
-puts puts
-lengthToken.print
-
-
-puts "Probability is spam: #{lengthToken.prob_spam(sample)}"
-puts spam_filter.is_spam(sample)
-
-spam_filter.print_truthtable
-
-money_analyzer = Money_Analyzer.new
-money_analyzer.analyze(trainingData)
-money_analyzer.print
-
-puts puts 'Uppercase'
-
-case_analyzer = Case_Analyzer.new
-case_analyzer.analyze(trainingData)
-case_analyzer.print
-
-puts puts 'Numbers'
-
-number_analyzer = Number_Analyzer.new
-number_analyzer.analyze(trainingData)
-number_analyzer.print
-
-puts puts 'Website'
-
-website_analyzer = Website_Analyzer.new
-website_analyzer.analyze(trainingData)
-website_analyzer.print
-
-
-puts
-puts
-puts
-puts
-puts
-
-puts 'Truth table'
-puts "Length: #{lengthToken.prob_ham(sample)}\t#{lengthToken.prob_spam(sample)}"
-puts "Upper: #{case_analyzer.prob_ham(sample)}\t#{case_analyzer.prob_spam(sample)}"
-puts "Numbers: #{number_analyzer.prob_ham(sample)}\t#{number_analyzer.prob_spam(sample)}"
-puts "Sites: #{website_analyzer.prob_ham(sample)}\t#{website_analyzer.prob_spam(sample)}"
-
-puts
-puts
 puts
 puts "Spam Filter: #{spam_filter.bayes_prob_ham(sample)}\t#{spam_filter.bayes_prob_spam(sample)}"
 spam_filter.print_truthtable
+puts
+spam_filter.bayes_truth_table
+puts
+spam_filter.bayes_truth_table_wbw
