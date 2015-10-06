@@ -2,9 +2,9 @@ puts 'Spam Filter Lab 1'
 
 class SpamFilter
 
-  def initialize(trainingData, testingData)
-    @training_data = trainingData
-    @testing_data = testingData
+  def initialize(training_data, testing_data)
+    @training_data = training_data
+    @testing_data = testing_data
     @threshold = 0.22
     @prob_ham = 0
     @prob_spam = 0
@@ -56,14 +56,61 @@ class SpamFilter
 
   end
 
-  def bayes_is_spam(line)
-    spam = @length_analyzer.prob_given_spam(line) * @upper_analyzer.prob_given_spam(line) * @number_analyzer.prob_given_spam(line) * @site_analyzer.prob_given_spam(line)
+  def bayes_prob_spam(line)
+    spam = @length_analyzer.prob_given_spam(line) * @upper_analyzer.prob_given_spam(line) * @site_analyzer.prob_given_spam(line)
     spam *= @prob_spam
   end
 
-  def bayes_is_ham(line)
-    spam = @length_analyzer.prob_given_ham(line) * @upper_analyzer.prob_given_ham(line) * @number_analyzer.prob_given_ham(line) * @site_analyzer.prob_given_ham(line)
+  def bayes_prob_ham(line)
+    spam = @length_analyzer.prob_given_ham(line) * @upper_analyzer.prob_given_ham(line) * @site_analyzer.prob_given_ham(line)
     spam *= @prob_ham
+  end
+
+  def bayes_is_ham(line)
+    bayes_prob_ham(line) > bayes_prob_spam(line)
+  end
+
+  def bayes_is_spam(line)
+    !bayes_is_ham(line)
+  end
+
+  def bayes_truth_table
+
+    spam_true = 0
+    spam_false = 0
+    ham_true = 0
+    ham_false = 0
+
+    @testing_data.each do |line|
+      answer = line.split.first
+      sample = line.split.drop(1).join(' ')
+
+      if answer == 'ham'
+        if bayes_is_ham(sample)
+          ham_true += 1
+        else
+          ham_false += 1
+        end
+      else
+        if bayes_is_spam(sample)
+          spam_true += 1
+        else
+          spam_false += 1
+        end
+      end
+
+    end
+
+    #Print the table
+    puts
+    puts "\t\tHam\t\tSpam"
+    puts "Ham\t\t#{ham_true}\t\t#{ham_false}"
+    puts "Spam\t#{spam_false}\t\t#{spam_true}"
+
+    puts
+    puts "Correctly identifies ham #{ham_true.to_f/(ham_true + ham_false)}% of the time"
+    puts "Correctly identifies spam #{spam_true.to_f/(spam_true + spam_false)}% of the time"
+
   end
 
   def set_threshold(threshold)
@@ -468,6 +515,16 @@ end
 
 class Website_Analyzer < Analyzer
 
+  def initialize
+
+    @storage = Array.new
+
+    2.times do
+      @storage.push(ProbSet.new)
+    end
+
+  end
+
   def token(line)
 
     contains_url = line.include?('www')
@@ -616,8 +673,7 @@ puts pSentence('We have a sentence', spamDictionary)
 puts
 puts
 
-sample = '8007 FREE for 1st week! No1 Nokia tone 4 ur mob every week just txt NOKIA to 8007 Get txting and tell ur mates www.getzed.co.uk POBox 36504 W4 5WQ norm 150p/tone 16+'
-
+sample = 'Travis is not sleeping'
 puts pSentence(sample, hamDictionary)
 puts pSentence(sample, spamDictionary)
 
@@ -675,4 +731,5 @@ puts "Sites: #{website_analyzer.prob_ham(sample)}\t#{website_analyzer.prob_spam(
 puts
 puts
 puts
-puts "Length: #{lengthToken.prob_given_ham(sample)}\t#{lengthToken.prob_given_spam(sample)}"
+puts "Spam Filter: #{spam_filter.bayes_prob_ham(sample)}\t#{spam_filter.bayes_prob_spam(sample)}"
+spam_filter.print_truthtable
