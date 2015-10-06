@@ -17,7 +17,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/SpamOrHam@Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1444135892938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="SpamOrHam" />
+    <SUITE FILE_PATH="coverage/SpamOrHam@Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1444138826573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="SpamOrHam" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -31,18 +31,15 @@
       <file leaf-file-name="spam_filter.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spam_filter.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6443515">
-              <caret line="673" column="4" selection-start-line="673" selection-start-column="4" selection-end-line="673" selection-end-column="4" />
+            <state vertical-scroll-proportion="-4.476744">
+              <caret line="399" column="27" selection-start-line="399" selection-start-column="27" selection-end-line="399" selection-end-column="27" />
               <folding>
+                <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
                 <element signature="e#742#1239#0" expanded="false" />
                 <element signature="e#2737#2797#0" expanded="false" />
                 <element signature="e#2801#2898#0" expanded="false" />
                 <element signature="e#2902#2943#0" expanded="false" />
-                <element signature="e#3763#4977#0" expanded="false" />
-                <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-                <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
                 <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-                <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
                 <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
                 <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
                 <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -302,7 +299,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444085135565</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Currently implements Bayes with spam filter, no bag of words.&#10;">
+      <created>1444135979044</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1444135979044</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -310,21 +313,21 @@
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39838493" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25679544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39838493" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31275168" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31090176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -343,18 +346,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated current work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated current work" />
+    <MESSAGE value="Currently implements Bayes with spam filter, no bag of words.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Currently implements Bayes with spam filter, no bag of words.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spam_filter.rb</url>
-          <line>64</line>
-          <option name="timeStamp" value="5" />
+          <line>285</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spam_filter.rb</url>
+          <line>283</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spam_filter.rb</url>
+          <line>287</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="CidrExceptionBreakpoint">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="RubyRunConfigurationType">
@@ -370,15 +392,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -403,15 +422,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -436,15 +452,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -469,15 +482,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -502,15 +512,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -535,15 +542,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -568,15 +572,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -601,15 +602,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="535" column="163" selection-start-line="535" selection-start-column="163" selection-end-line="535" selection-end-column="163" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -634,15 +632,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -667,15 +662,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -700,15 +692,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -733,15 +722,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -766,15 +752,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -788,48 +771,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
-            <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
-            <element signature="n#pWord#0;n#!!top" expanded="false" />
-            <element signature="n#pSentence#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spamcollection.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3188" column="27" selection-start-line="3188" selection-start-column="27" selection-end-line="3188" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spam_filter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#742#1239#0" expanded="false" />
-            <element signature="e#2737#2797#0" expanded="false" />
-            <element signature="e#2801#2898#0" expanded="false" />
-            <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -854,15 +801,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -887,15 +831,42 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
+            <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
+            <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
+            <element signature="n#pWord#0;n#!!top" expanded="false" />
+            <element signature="n#pSentence#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spamcollection.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3188" column="27" selection-start-line="3188" selection-start-column="27" selection-end-line="3188" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam_filter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
+            <element signature="e#742#1239#0" expanded="false" />
+            <element signature="e#2737#2797#0" expanded="false" />
+            <element signature="e#2801#2898#0" expanded="false" />
+            <element signature="e#2902#2943#0" expanded="false" />
+            <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -920,15 +891,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -953,15 +921,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -986,15 +951,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="128" column="24" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -1019,15 +981,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -1052,15 +1011,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -1085,15 +1041,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -1118,15 +1071,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -1140,15 +1090,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />
@@ -1161,6 +1108,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33174226">
           <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1177,18 +1125,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spam_filter.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6443515">
-          <caret line="673" column="4" selection-start-line="673" selection-start-column="4" selection-end-line="673" selection-end-column="4" />
+        <state vertical-scroll-proportion="-4.476744">
+          <caret line="399" column="27" selection-start-line="399" selection-start-column="27" selection-end-line="399" selection-end-column="27" />
           <folding>
+            <element signature="n#SpamFilter#0;n#!!top" expanded="false" />
             <element signature="e#742#1239#0" expanded="false" />
             <element signature="e#2737#2797#0" expanded="false" />
             <element signature="e#2801#2898#0" expanded="false" />
             <element signature="e#2902#2943#0" expanded="false" />
-            <element signature="e#3763#4977#0" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#create_dictionary#0;n#!!top" expanded="false" />
             <element signature="n#numberOfWordsInDictionary#0;n#!!top" expanded="false" />
             <element signature="n#pWord#0;n#!!top" expanded="false" />

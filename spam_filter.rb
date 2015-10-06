@@ -280,6 +280,11 @@ class Analyzer
     total = 0
 
     @storage.each do |x|
+      if x.nil?
+        puts 'x is nil'
+      elsif x.get_spam.nil?
+        puts 'x.get_spam is nil'
+      end
       total += x.get_spam
     end
 
@@ -392,11 +397,11 @@ class ProbSet
   end
 
   def get_ham
-    @ham_num
+    @ham_num ? @ham_num : 0
   end
 
   def get_spam
-    @spam_num
+    @spam_num ? @spam_num : 0
   end
 
   def print
