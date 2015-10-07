@@ -16,6 +16,7 @@ class SpamFilter
     @upper_analyzer = Case_Analyzer.new
     @number_analyzer = Number_Analyzer.new
     @site_analyzer = Website_Analyzer.new
+    @money_analyzer = Money_Analyzer.new
 
     train
   end
@@ -25,6 +26,7 @@ class SpamFilter
     @upper_analyzer.analyze(@training_data)
     @number_analyzer.analyze(@training_data)
     @site_analyzer.analyze(@training_data)
+    @money_analyzer.analyze(@training_data)
 
   end
 
@@ -54,12 +56,12 @@ class SpamFilter
   end
 
   def bayes_prob_spam_wbw(line)
-    spam = @length_analyzer.prob_given_spam(line) * @upper_analyzer.prob_given_spam(line) * @site_analyzer.prob_given_spam(line) * (0.25 * p_sentence(line, @spam_dictionary))
+    spam = @length_analyzer.prob_given_spam(line) * @upper_analyzer.prob_given_spam(line) * @site_analyzer.prob_given_spam(line) * @number_analyzer.prob_given_spam(line) * p_sentence(line, @spam_dictionary)
     spam *= @prob_spam
   end
 
   def bayes_prob_ham_wbw(line)
-    spam = @length_analyzer.prob_given_ham(line) * @upper_analyzer.prob_given_ham(line) * @site_analyzer.prob_given_ham(line) * (0.25 * p_sentence(line, @ham_dictionary))
+    spam = @length_analyzer.prob_given_ham(line) * @upper_analyzer.prob_given_ham(line) * @site_analyzer.prob_given_ham(line) * @number_analyzer.prob_given_ham(line) * p_sentence(line, @ham_dictionary)
     spam *= @prob_ham
 
   end
@@ -166,8 +168,8 @@ class SpamFilter
     puts "Spam\t#{spam_false}\t\t#{spam_true}"
 
     puts
-    puts "Correctly identifies ham #{ham_true.to_f/(ham_true + ham_false)}% of the time"
-    puts "Correctly identifies spam #{spam_true.to_f/(spam_true + spam_false)}% of the time"
+    puts "Correctly identifies ham #{ham_true.to_f/(ham_true + ham_false)} of the time"
+    puts "Correctly identifies spam #{spam_true.to_f/(spam_true + spam_false)} of the time"
 
   end
 
@@ -476,17 +478,7 @@ class ProbSet
 
 end
 
-class Money_Analyzer
-
-  def initialize
-
-    @storage = Array.new
-
-    5.times do
-      @storage.push(ProbSet.new)
-    end
-
-  end
+class Money_Analyzer < Analyzer
 
   def print
     @storage.each do |token|
@@ -637,6 +629,18 @@ def create_dictionary(data)
 
   end
 
+  sorted_dictionary = dictionary.sort_by {|_key, value| value}
+
+  sorted_dictionary.each do |key, value|
+    if value > 1000
+      dictionary.delete(key)
+    elsif value < 5
+      dictionary.delete(key)
+    end
+  end
+
+  puts dictionary.size
+
   dictionary
 
 end
@@ -668,24 +672,24 @@ def p_sentence(x, dictionary)
   x = x.tr('^A-Za-z', ' ')
   sentence = x.split
   prob = -1
+  sum = 0
 
   #Calculate probability based off each word
   sentence.each do |word|
 
     result = p_word_given(word.downcase, dictionary)
 
-    if result == 0
-      next
-    end
-
     if prob == -1
       prob = result
+      sum += result
     else
       prob *= result
+      sum += result
     end
   end
 
   prob
+  sum.to_f / sentence.size
 end
 
 
@@ -734,9 +738,6 @@ puts "Testing data size: #{testing_data.size}"
 ham_dictionary = create_dictionary(training_ham)
 spam_dictionary = create_dictionary(training_spam)
 
-prob_word_given_ham = ham_dictionary.size.to_f/dictionary_size(ham_dictionary)
-prob_word_given_spam = spam_dictionary.size.to_f/dictionary_size(spam_dictionary)
-
 sample = 'Hey so I got some tickets to go to the movie this friday?  Want to come?'
 
 #Test data
@@ -746,9 +747,9 @@ spam_filter.add_spam_dictionary(spam_dictionary)
 spam_filter.add_ham_dictionary(ham_dictionary)
 
 puts
-puts "Spam Filter: #{spam_filter.bayes_prob_ham(sample)}\t#{spam_filter.bayes_prob_spam(sample)}"
-spam_filter.print_truthtable
-puts
+puts 'Spam Filter:'
 spam_filter.bayes_truth_table
+puts
+puts 'Generating with bag of words approach...'
 puts
 spam_filter.bayes_truth_table_wbw
