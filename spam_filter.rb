@@ -111,6 +111,7 @@ class SpamFilter
     puts
     puts "Correctly identifies ham #{ham_true.to_f/(ham_true + ham_false)}% of the time"
     puts "Correctly identifies spam #{spam_true.to_f/(spam_true + spam_false)}% of the time"
+    puts "Correctly classifies #{(ham_true.to_f+spam_true.to_f)/@testing_data.size} of all texts"
 
   end
 
@@ -170,6 +171,7 @@ class SpamFilter
     puts
     puts "Correctly identifies ham #{ham_true.to_f/(ham_true + ham_false)} of the time"
     puts "Correctly identifies spam #{spam_true.to_f/(spam_true + spam_false)} of the time"
+    puts "Correctly classifies #{(ham_true.to_f+spam_true.to_f)/@testing_data.size} of all texts"
 
   end
 
@@ -179,128 +181,6 @@ class SpamFilter
 
   def add_ham_dictionary(ham_dictionary)
     @ham_dictionary = ham_dictionary
-  end
-
-  def set_threshold(threshold)
-    if threshold <= 1
-      @threshold = threshold
-    else
-      puts 'Can\'t set threshold greater than 100%'
-    end
-  end
-
-  def analyze(line)
-    @length_analyzer.prob_spam(line)
-  end
-
-  def is_spam(line)
-    if analyze(line) > @threshold
-      true
-    else
-      false
-    end
-  end
-
-  def is_ham(line)
-    !is_spam(line)
-  end
-
-  def print_truthtable
-
-    spam_true = 0
-    spam_false = 0
-    ham_true = 0
-    ham_false = 0
-
-    @testing_data.each do |line|
-      answer = line.split.first
-      sample = line.split.drop(1).join(' ')
-
-      if answer == 'ham'
-        if is_ham(sample)
-          ham_true += 1
-        else
-          ham_false += 1
-        end
-      else
-        if is_spam(sample)
-          spam_true += 1
-        else
-          spam_false += 1
-        end
-      end
-
-    end
-
-    #Print the table
-    puts
-    puts "\t\tHam\t\tSpam"
-    puts "Ham\t\t#{ham_true}\t\t#{ham_false}"
-    puts "Spam\t#{spam_false}\t\t#{spam_true}"
-
-    puts
-    puts "Correctly identifies ham #{ham_true.to_f/(ham_true + ham_false)}% of the time"
-    puts "Correctly identifies spam #{spam_true.to_f/(spam_true + spam_false)}% of the time"
-
-  end
-
-  def get_optimal_threshold
-
-    highest_average = 0.0
-    highest_index = 0;
-    optimal_threshold = @threshold
-    temp = @threshold
-    @threshold = 0.01
-
-    98.times do
-
-      spam_true = 0
-      spam_false = 0
-      ham_true = 0
-      ham_false = 0
-
-      @testing_data.each do |line|
-        answer = line.split.first
-        sample = line.split.drop(1).join(' ')
-
-        if answer == 'ham'
-          if is_ham(sample)
-            ham_true += 1
-          else
-            ham_false += 1
-          end
-        else
-          if is_spam(sample)
-            spam_true += 1
-          else
-            spam_false += 1
-          end
-        end
-
-      end
-
-      spam_ave = spam_true.to_f / (spam_true + spam_false)
-      ham_ave = ham_true.to_f / (ham_true + ham_false)
-
-      total_ave = (spam_ave + ham_ave).to_f / 2
-
-      #puts "Spam: #{spam_ave} Highest: #{highest_average}"
-
-      if total_ave > highest_average
-        puts "Ham: #{ham_ave} Spam: #{spam_ave} Highest: #{highest_average}"
-        puts spam_true
-        puts spam_false
-        highest_average = total_ave
-        optimal_threshold = @threshold
-      end
-
-      @threshold += 0.01
-
-    end
-
-    @threshold = temp
-    optimal_threshold
-
   end
 
 end

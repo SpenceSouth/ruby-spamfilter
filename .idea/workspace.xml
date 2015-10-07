@@ -17,7 +17,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/SpamOrHam@Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1444180105817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="SpamOrHam" />
+    <SUITE FILE_PATH="coverage/SpamOrHam@Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1444224092483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="SpamOrHam" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -37,22 +37,23 @@
       <file leaf-file-name="spam_filter.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spam_filter.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70987654">
-              <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.7768595">
+              <caret line="173" column="97" selection-start-line="173" selection-start-column="97" selection-end-line="173" selection-end-column="97" />
               <folding>
                 <element signature="e#756#1253#0" expanded="false" />
-                <element signature="e#1947#2813#0" expanded="false" />
-                <element signature="e#3268#3345#0" expanded="false" />
-                <element signature="e#3349#3402#0" expanded="false" />
-                <element signature="e#3406#4261#0" expanded="false" />
-                <element signature="e#4265#4350#0" expanded="false" />
-                <element signature="e#4354#4435#0" expanded="false" />
-                <element signature="e#4439#4593#0" expanded="false" />
-                <element signature="e#4597#4657#0" expanded="false" />
-                <element signature="e#4661#4758#0" expanded="false" />
-                <element signature="e#4762#4803#0" expanded="false" />
+                <element signature="e#1526#1785#0" expanded="false" />
+                <element signature="e#1789#1878#0" expanded="false" />
+                <element signature="e#1882#1943#0" expanded="false" />
+                <element signature="e#2915#3139#0" expanded="false" />
+                <element signature="e#3143#3362#0" expanded="false" />
+                <element signature="e#3366#3443#0" expanded="false" />
+                <element signature="e#3447#3500#0" expanded="false" />
+                <element signature="e#4461#4546#0" expanded="false" />
+                <element signature="e#4550#4631#0" expanded="false" />
+                <element signature="e#5438#5857#0" expanded="false" />
                 <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
                 <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+                <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
                 <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
                 <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
                 <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -67,8 +68,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2349" column="41" selection-start-line="2349" selection-start-column="41" selection-end-line="2349" selection-end-column="41" />
+            <state vertical-scroll-proportion="-5.827586">
+              <caret line="4762" column="55" selection-start-line="4762" selection-start-column="42" selection-end-line="4762" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -329,7 +330,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444150813473</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added a functional bag of words approach">
+      <created>1444180126738</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1444180126738</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -346,21 +353,21 @@
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32839838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39838493" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21459228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39838493" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31006712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31090176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32839838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -382,24 +389,25 @@
     <MESSAGE value="Currently implements Bayes with spam filter, no bag of words.&#10;" />
     <MESSAGE value="Think that we cleaned up a nil error" />
     <MESSAGE value="Strong algorithm.  Both ham to ham and spam to spam have over 90% success." />
-    <option name="LAST_COMMIT_MESSAGE" value="Strong algorithm.  Both ham to ham and spam to spam have over 90% success." />
+    <MESSAGE value="Added a functional bag of words approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a functional bag of words approach" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spam_filter.rb</url>
-          <line>353</line>
+          <line>233</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spam_filter.rb</url>
-          <line>351</line>
+          <line>231</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spam_filter.rb</url>
-          <line>355</line>
+          <line>235</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
@@ -439,18 +447,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -475,18 +484,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -511,18 +521,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -547,18 +558,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -583,18 +595,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -619,18 +632,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -655,18 +669,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -691,18 +706,19 @@
           <caret line="535" column="163" selection-start-line="535" selection-start-column="163" selection-end-line="535" selection-end-column="163" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -727,54 +743,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spamcollection.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2525" column="92" selection-start-line="2525" selection-start-column="89" selection-end-line="2525" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spam_filter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
-            <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -799,18 +780,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -835,18 +817,56 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
+            <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
+            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
+            <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spamcollection.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2525" column="92" selection-start-line="2525" selection-start-column="89" selection-end-line="2525" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam_filter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#756#1253#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
+            <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
+            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -871,18 +891,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -896,54 +917,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
-            <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
-            <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spamcollection.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3188" column="27" selection-start-line="3188" selection-start-column="27" selection-end-line="3188" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spam_filter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
-            <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
-            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -968,18 +954,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -1004,18 +991,56 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
+            <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
+            <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
+            <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spamcollection.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3188" column="27" selection-start-line="3188" selection-start-column="27" selection-end-line="3188" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam_filter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#756#1253#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
+            <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
+            <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -1040,18 +1065,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -1076,18 +1102,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -1112,18 +1139,19 @@
           <caret line="128" column="24" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -1148,18 +1176,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -1184,18 +1213,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -1220,18 +1250,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -1256,18 +1287,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -1281,18 +1313,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
@@ -1312,30 +1345,31 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2349" column="41" selection-start-line="2349" selection-start-column="41" selection-end-line="2349" selection-end-column="41" />
+        <state vertical-scroll-proportion="-5.827586">
+          <caret line="4762" column="55" selection-start-line="4762" selection-start-column="42" selection-end-line="4762" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spam_filter.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70987654">
-          <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.7768595">
+          <caret line="173" column="97" selection-start-line="173" selection-start-column="97" selection-end-line="173" selection-end-column="97" />
           <folding>
             <element signature="e#756#1253#0" expanded="false" />
-            <element signature="e#1947#2813#0" expanded="false" />
-            <element signature="e#3268#3345#0" expanded="false" />
-            <element signature="e#3349#3402#0" expanded="false" />
-            <element signature="e#3406#4261#0" expanded="false" />
-            <element signature="e#4265#4350#0" expanded="false" />
-            <element signature="e#4354#4435#0" expanded="false" />
-            <element signature="e#4439#4593#0" expanded="false" />
-            <element signature="e#4597#4657#0" expanded="false" />
-            <element signature="e#4661#4758#0" expanded="false" />
-            <element signature="e#4762#4803#0" expanded="false" />
+            <element signature="e#1526#1785#0" expanded="false" />
+            <element signature="e#1789#1878#0" expanded="false" />
+            <element signature="e#1882#1943#0" expanded="false" />
+            <element signature="e#2915#3139#0" expanded="false" />
+            <element signature="e#3143#3362#0" expanded="false" />
+            <element signature="e#3366#3443#0" expanded="false" />
+            <element signature="e#3447#3500#0" expanded="false" />
+            <element signature="e#4461#4546#0" expanded="false" />
+            <element signature="e#4550#4631#0" expanded="false" />
+            <element signature="e#5438#5857#0" expanded="false" />
             <element signature="n#LengthAnalyzer#0;n#!!top" expanded="false" />
             <element signature="n#ProbSet#0;n#!!top" expanded="false" />
+            <element signature="n#Money_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Case_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Number_Analyzer#0;n#!!top" expanded="false" />
             <element signature="n#Website_Analyzer#0;n#!!top" expanded="false" />
